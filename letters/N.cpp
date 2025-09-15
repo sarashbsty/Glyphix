@@ -1,5 +1,5 @@
 #include<iostream>
-#include "LettersFunc.h"
+#include "N.h"
 using namespace std;
 
 string N(int size,int row,char style){

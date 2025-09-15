@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(Alphabet LANGUAGES CXX)
+project(Glyphix LANGUAGES CXX)
 set(CMAKE_CXX_COMPILER g++)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -23,9 +23,9 @@ file(GLOB_RECURSE ALL_HEADERS
 # -----------------------------
 # Create main executable
 # -----------------------------
-add_executable(alphabet ${ALL_SOURCES} ${ALL_HEADERS})
+add_executable(glyphix ${ALL_SOURCES} ${ALL_HEADERS})
 
 # Output directory
-set_target_properties(alphabet PROPERTIES
+set_target_properties(glyphix PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}
 )

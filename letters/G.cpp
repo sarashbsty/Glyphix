@@ -1,5 +1,5 @@
 #include<iostream>
-#include "LettersFunc.h"
+#include "G.h"
 using namespace std;
 
 string G(int size,int row,char style){

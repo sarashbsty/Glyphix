@@ -1,5 +1,5 @@
 #include<iostream>
-#include "LettersFunc.h"
+#include "W.h"
 using namespace std;
 
 string W(int size,int row,char style){
