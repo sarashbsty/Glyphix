@@ -27,8 +27,6 @@ SOFTWARE.
 #include "UserInput.h"   // user_input()
 using namespace std;
 
-void user_input(string &str,int &size,char &style, char &choice);
-
 int main(){
 	
     string word = "";

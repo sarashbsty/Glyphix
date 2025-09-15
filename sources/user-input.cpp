@@ -34,10 +34,10 @@ void user_input(string &str,int &size,char &style, char &choice){
 		clear_buffer;
 	}
 	switch(choice2){		   
-		case '1' :{  // need to create block. remove and see the error. compiler dependent
+		case '1' :{  // need to write inside block. remove and see the error. compiler dependent
 					cout<<"'--- Enter Name or directory of the file : "; getline(cin,str); 
 				    ifstream file(str);
-				    if(file.is_open()){
+				    if(file.is_open() && file.peek() != ifstream::traits_type::eof()){
 					    string line; str = "";
 						cout<<"File : ";
 						while(getline(file,line)){
@@ -46,7 +46,7 @@ void user_input(string &str,int &size,char &style, char &choice){
 						}
 						break;
 				    }
-				    else cout<<str<<" not found. Instead....\n"; 
+				    else cout<<"\n\""<<str<<"\""<<" : file not found or has no data. Instead....\n"; 
 				}
 				
 		case '2' : cout<<"'--- Enter your Sentence : "; 
