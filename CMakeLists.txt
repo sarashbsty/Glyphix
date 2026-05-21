@@ -14,7 +14,7 @@ if (EMSCRIPTEN)
         "-sMODULARIZE=1"
         "-sEXPORT_ES6=1"
         "-sEXPORTED_RUNTIME_METHODS=['stringToNewUTF8','UTF8ToString']"
-        "-sEXPORTED_FUNCTIONS=['_run_glyphix','_free_json']"
+        "-sEXPORTED_FUNCTIONS=['_run_glyphix','_free_json','_free']"
     )
 endif()
 
